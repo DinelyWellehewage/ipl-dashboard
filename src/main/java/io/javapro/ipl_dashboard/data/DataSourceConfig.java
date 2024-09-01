@@ -9,7 +9,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 @Configuration
 public class DataSourceConfig {
      @Bean
-    public DataSourceTransactionManager transactionManager(DataSource dataSource) {
+    public DataSourceTransactionManager customTransactionManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
 }

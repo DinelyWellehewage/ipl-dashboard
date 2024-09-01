@@ -2,9 +2,10 @@ package io.javapro.ipl_dashboard.model;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-@Entity
+import javax.persistence.Id;
+
+
+@javax.persistence.Entity
 public class Match {
     @Id
     private long id;
